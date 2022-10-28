@@ -3,15 +3,12 @@ body{
     background-color: dodgerblue;
 }
 
-header, footer
+header,h1, h2, footer
 {
     text-align: center;
 }
 
-main h1
-{
-    text-align:center;
-}
+
 
 .nav{
     position: absolute;
