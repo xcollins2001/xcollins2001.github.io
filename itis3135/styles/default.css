@@ -12,3 +12,15 @@ main h1
 {
     text-align:center;
 }
+
+.nav{
+    position: absolute;
+    width: 100%;
+}
+
+.nav a{
+    position: relative;
+    left: 45%;
+    top: 20px;
+    color: white;
+}
