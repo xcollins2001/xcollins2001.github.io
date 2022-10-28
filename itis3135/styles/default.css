@@ -76,4 +76,8 @@ table .even
     background-color: black;
 }
 
+table .head
+{
+    background-color: blueviolet;
+}
 
