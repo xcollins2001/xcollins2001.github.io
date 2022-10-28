@@ -20,6 +20,7 @@
             </nav>
         
         </header>
+        
 
         <main>
         <br>
@@ -27,14 +28,14 @@
         <br>
         <br>
         <br>
-            <h2 id ="header2"> <font size ="6">
+            <h2>
                HTML Tables
-            </font></h2>
+            </h2>
             <br>
             <br>
-            <h3><font size="4"> 
+            <h3> 
                 My Tabular Data
-            </font></h3>
+            </h3>
             <ul>
                 <li> Xavier Collins | xavierbrown00@gmail.com | Years of Service: 10 </li>
                 <li> Eric Collins | ericr.collins@yahoo.com | Years of Service: 18 </li>
@@ -46,138 +47,121 @@
                 <li> Micheal Jordan | Mjordan23@yahoo.com | Years of Service: 7 </li>
             </ul>
             <br>
-            <h4 id ="header3"> <font size ="4">
+            <h4>
                 Employee Data in Simple Table
-            </font></h4>
+            </h4>
 
-            <table border="2" bgcolor= "black" align="center" width= "800">
-                <tr bgcolor ="white">
-                <th width="100"> Name</th>
-                <th width="100"> Email</th>
-                <th width="100"> Years of Service</th>
-                </tr>
-
-                <tr bgcolor ="lightgrey" align="center">
-                    <td>Xavier Collins</td>
-                    <td> xavierbrown00@gmail.com </td>
-                    <td> 10 </td>
-                </tr>
-                
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Nicketa Collins</td>
-                    <td> dcollins@yahoo.com</td>
-                    <td> 5 </td>
-                </tr>
-                
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Litzy Espanoza</td>
-                    <td> Litzy2000@gmail.com</td>
-                    <td> 3 </td>
-                </tr>
-                
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Isaih Collins</td>
-                    <td> collins2025@aol.com</td>
-                    <td> 4 </td>
-                </tr>
-                    
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Zelford Irions</td>
-                    <td> zelford2001@gmail.com</td>
-                    <td> 2 </td>
-                 </tr>
-                        
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> John Harris</td>
-                    <td> jharris25@gmail.com</td>
-                    <td> 8 </td>
-                </tr>
-                            
-                 <tr bgcolor = "lightgrey" align="center">
-                     <td> Micheal Jordan </td>
-                     <td>Mjordan23@yahoo.com </td>
-                    <td> 7 </td>
-                 </tr>
-                
+            <table class="simple">							
+				<tr class="head">
+					<th>Name</th>
+					<th>Email</th>
+					<th>Years of Service</th>
+				</tr>				
+				<tr class="even">
+					<td>Xavier Collins</td>
+					<td>xavierbrown00@gmail.com</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>Nicketa Collins</td>
+					<td>dcollins@yahoo.com</td>
+					<td>5</td>
+				</tr>
+				<tr class="even">
+					<td>Litzy Espanoza</td>
+					<td>Litzy2000@gmail.com</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Isaih Collins</td>
+					<td>collins2025@aol.com</td>
+					<td>4</td>
+				</tr>				
+				<tr class="even">
+					<td>Zelford Irions</td>
+					<td>zelford2001@gmail.com</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>John Harris</td>
+					<td>jharris25@gmail.com</td>
+					<td>8</td>
+				</tr>
+				<tr class="even">
+					<td>Micheal Jordan</td>
+					<td>Mjordan23@yahoo.com</td>
+					<td>7</td>
+				</tr>
             </table>
             <br>
             <br>
 
-            <h5 id ="header3"> <font size ="4">
+            <h5>
                 Employee Data in Complex Table
-            </font></h5>
+            </h5>
 
-            <table border="2" bgcolor= "black" align="center" width= "800">
-                <tr bgcolor ="white">
-                <th with="100"> Workers Postion</th>
-                <th width="100"> Name</th>
-                <th width="100"> Email</th>
-                <th width="100"> Years of Service</th>
-                <th width="100"> Salary</th>
+            <table class="complex">
+                <tr class="top">
+                    <th id="workers position" headers="workers position">Workers Position</th>
+                    <th id="Name" headers="Name">Name</th>
+                    <th id="Email" headers="Email">Email</th>
+                    <th id="Service" header="Service">Years of Service</th>
+                    <th id="Salary" header="Salary">Salary</th>
                 </tr>
-
-                <tr bgcolor ="lightgrey" align="center">
-                    <td>CEO</td>
-                    <td>Xavier Collins</td>
-                    <td> xavierbrown00@gmail.com </td>
-                    <td> 10 </td>
-                    <td> $350,000</td>
+                <tr class="even">
+                    <td headers="Position">CEO</td>
+                    <td headers="Name">Xavier Collins</td>
+                    <td headers="Email">xavierbrown00@gmail.com</td>
+                    <td headers="Service">10</td>
+                    <td headers="Salary">$350,000</td>
                 </tr>
-                
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Manager</td>
-                    <td> Nicketa Collins</td>
-                    <td> dcollins@yahoo.com</td>
-                    <td> 5 </td>
-                    <td>$200,000</td>
+                <tr>
+                    <td headers="Position">Manager</td>
+                    <td headers="Name">Nicketa Collins</td>
+                    <td headers="Email">dcollins@yahoo.com</td>
+                    <td headers="Service">5</td>
+                    <td headers="Salary">$200,000</td>
                 </tr>
-                
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Human Resource</td>
-                    <td> Litzy Espanoza</td>
-                    <td> Litzy2000@gmail.com</td>
-                    <td> 3 </td>
-                    <td> $135,000</td>
+                <tr class="even">
+                    <td headers="Position">Human Resource</td>
+                    <td headers="Name">Litzy Espanoza</td>
+                    <td headers="Email">Litzy2000@gmail.com</td>
+                    <td headers="Service">3</td>
+                    <td headers="Salary">$135,000</td>
                 </tr>
-                
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Supervisor</td>
-                    <td> Isaih Collins</td>
-                    <td> collins2025@aol.com</td>
-                    <td> 4 </td>
-                    <td> $145,000</td>
+                <tr>
+                    <td headers="Position">Supervisor</td>
+                    <td headers="Name">	Isaih Collins</td>
+                    <td headers="Email">collins2025@aol.com</td>
+                    <td headers="Service">4</td>
+                    <td headers="Salary">$145,000</td>
+                </tr>					
+                <tr class="even">
+                    <td headers="Position">Sales Associate</td>
+                    <td headers="Name">Zelford Irions</td>
+                    <td headers="Email">zelford2001@gmail.com</td>
+                    <td headers="Service">2</td>
+                    <td headers="Salary">$98,000</td>
                 </tr>
-                    
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Sales Associate</td>
-                    <td> Zelford Irions</td>
-                    <td> zelford2001@gmail.com</td>
-                    <td> 2 </td>
-                    <td> $98,000</td>
-                 </tr>
-                        
-                <tr bgcolor = "lightgrey" align="center">
-                    <td> Interviewer</td>
-                    <td> John Harris</td>
-                    <td> jharris25@gmail.com</td>
-                    <td> 8 </td>
-                    <td> $90,000</td>
+                <tr>
+                    <td headers="Position">Interviewer</td>
+                    <td headers="Name">John Harris</td>
+                    <td headers="Email">jharris25@gmail.com</td>
+                    <td headers="Service">8</td>
+                    <td headers="Salary">$90,000</td>
                 </tr>
-                            
-                 <tr bgcolor = "lightgrey" align="center">
-                    <td> Sales Recruiter</td>
-                     <td> Micheal Jordan </td>
-                     <td>Mjordan23@yahoo.com </td>
-                    <td> 7 </td>
-                    <td> $93,000</td>
-                 </tr>
-
-                 <tr bgcolor = "white">
-                 <th id="par" colspan="3">Total Years of Service</th>
-                  <th id="co4_co9" headers="Years_of_Service">39</th>
-                  <th id="co5_co9" headers="Salary">$1,111,000</th>
-               </tr>
-                
+                <tr class="even">
+                    <td headers="Position">Sales Recruiter</td>
+                    <td headers="Name">Micheal Jordan</td>
+                    <td headers="Email">Mjordan23@yahoo.com</td>
+                    <td headers="Service">7</td>
+                    <td headers="Salary">$93,000</td>
+                </tr>
+                <tr class="bottom">
+                    <td colspan="3" headers="Position Name Email">Total Years of Service</td>
+                    <td headers="Service">39</td>
+                    <td headers="Salary">$1,111,000</td>
+                </tr>
             </table>
 
 

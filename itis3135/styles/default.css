@@ -47,3 +47,33 @@ nav ul li a{
     text-align: center;
 }
 
+table {
+    color:black;
+    border: 2px solid black;
+    padding: 0.2rem;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table .top
+{
+    background-color: lightgrey;
+}
+
+table .bottom
+{
+    background-color: white;
+}
+
+table tr
+{
+    background-color:black;
+}
+
+table .even
+{
+    background-color: black;
+}
+
+
