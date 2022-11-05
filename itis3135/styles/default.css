@@ -81,3 +81,23 @@ table .head
     background-color: blueviolet;
 }
 
+form
+{
+    text-align: center;
+    border-style: inset;
+    border-color: black;
+    background-color: #5458a4;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+}
+
+button
+{
+    background-color: #ffffff
+}
+
+button:hover
+{
+    background-color: #ffffff;
+}
