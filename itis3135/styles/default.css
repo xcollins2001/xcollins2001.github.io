@@ -81,6 +81,12 @@ table .head
     background-color: blueviolet;
 }
 
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 form
 {
     text-align: center;
