@@ -69,6 +69,7 @@ table .bottom
 table tr
 {
     background-color:black;
+    text-align: center;
 }
 
 table .even
