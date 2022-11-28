@@ -29,7 +29,7 @@ if(hour >= 12)
     }
 
     let totalDayAndTime = "Today is " + hour + ":" + minute + dayAndNight + " on " + daysOfTheWeek[day] + ", " + date + " " + nameOfMonth[monthNumberType] + " " + year;
-    document.getElementById("timeoutput").innerHTML = totalDayAndTime;
+    document.getElementById("timeAndDatingOutput").innerHTML = totalDayAndTime;
 
 function userSubmission(){
     let userName = document.getElementById("userName").value;
