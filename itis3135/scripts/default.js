@@ -7,7 +7,7 @@ function scriptTest()
 window.onload = function () {
     var date = new Date();
     var day = date.toDateString();
-    var time = date.toLocalsTimeString();
+    var time = date.toLocaleString();
     document.getElementById("date").innerHTML = time + " , " + day;
 }
 
@@ -16,7 +16,7 @@ function userSubmission(){
     const userFeeling = document.getElementById("userFeeling").value;
     console.log(userName);
     console.log(userFeeling);
-    document.getElementById("userSubmission").innerHTML = "The Collins Design LLC welcomes you, " + userName + "! were glad you are doing  " + userFeeling + "!";
+    document.getElementById("user").innerHTML = "The Collins Design LLC welcomes you, " + userName + "! were glad you are doing  " + userFeeling + "!";
 }
 
 function customerWebsites() {
