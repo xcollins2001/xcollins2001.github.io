@@ -3,33 +3,13 @@ function scriptTest()
     alert("My script is running!");
 }
 
-gettimeOfTheDay()
-{
-    var current = new Date();
-    var monthNumberType = current.getMonth() + 1;
-    var day = current.getDay();
-    var year = current.getFullYear();  
-    var date = current.getDate();
-    var hour = current.getHours();
-    var minute = current.getMinutes();
-    var dayAndNight;
+
+window.onload = function () {
+    var userDate = new Date();
+    var day = userDate.toString();
+    var time = userDate.toLocalsTimeString();
+    document.getElementById("userDate").innerHTML = time + " , " + day;
 }
-
-var nameOfMonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-var daysOfTheWeek = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-
-if(hour >= 12)
-    {
-        hour %= 12;
-        dayAndNight = "pm";
-    }
-    else
-    {
-        dayAndNight = "am";
-    }
-
-    let totalDayAndTime = "Today is " + hour + ":" + minute + dayAndNight + " on " + daysOfTheWeek[day] + ", " + date + " " + nameOfMonth[monthNumberType] + " " + year;
-    document.getElementById("timeAndDatingOutput").innerHTML = totalDayAndTime;
 
 function userSubmission(){
     let userName = document.getElementById("userName").value;
