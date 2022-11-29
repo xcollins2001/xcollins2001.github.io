@@ -34,7 +34,7 @@ if(hour >= 12)
 function userSubmission(){
     let userName = document.getElementById("userName").value;
     let userFeeling = document.getElementById("userFeeling").value;
-    let userGetWelcome = "Hi, welcome to Xavier Collins Design LLC, " + userName + "! "+ " we are pleased to hear your feeling " + userFeeling + "!";
+    let userGetWelcome = "The Collins Design LLC welcomes you, " + userName + "! were glad you are doing  " + userFeeling + "!";
     document.getElementById("welcomeoutput").innerHTML = userGetWelcome;
 }
 
