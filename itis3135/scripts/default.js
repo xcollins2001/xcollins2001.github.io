@@ -10,6 +10,9 @@ window.onload = function () {
     var time = date.toLocalsTimeString();
     document.getElementById("date").innerHTML = time + " , " + day;
 }
+function promptUser() { }
+function getTodaysDate() { }
+
 
 function userSubmission(){
     const userName = document.getElementById("userName").value;
