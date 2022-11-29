@@ -38,18 +38,17 @@
             <h3>
                  Today's Date: <span id="date"></span>
             </h3>
-            <p id="input">
-                What is your name? <input type="text" id="name" name="name" class="textbox" placeholder="First and Last name" autocomplete="on" required>
-                <br>
-                <br>
-                How are you feeling? <input type="text" id="feeling" name="feeling" class="textbox" placeholder="How are you?" autocomplete="on" required>
-                <br>
-                <br>
-                
+            
+            <form>
+               <label for ="name"> What is your name? <input id="name" type="text" required placeholder="First and Last name">
+             </label>
+
+             <label for="feeling"> How are you feeling? <input id="feeling" type="text" required placeholder="How are you?">
+            </label>
                 <button type="button" onclick="userSubmission()">submit</button>
-                   
-            </p>
-            <p id="userOutput"></p>
+            </form>
+
+            
             <button onclick="scriptTest()">Tester</button>
             <button onclick="customerWebsites()">Customer Websites</button>
             <button onclick="totalCostWebsite()">Total Website Cost</button>

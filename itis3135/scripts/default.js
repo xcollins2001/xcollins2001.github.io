@@ -6,13 +6,10 @@ function scriptTest()
 
 window.onload = function () {
     var date = new Date();
-    var day = date.toString();
+    var day = date.toDateString();
     var time = date.toLocalsTimeString();
     document.getElementById("date").innerHTML = time + " , " + day;
 }
-function promptUser() { }
-function getTodaysDate() { }
-
 
 function userSubmission(){
     const userName = document.getElementById("userName").value;
