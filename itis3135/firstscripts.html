@@ -36,7 +36,7 @@
             <h2>First Scripts Page</h2>
 
             <h3>
-                 Today's Date: <span id="userDate"></span>
+                 Today's Date: <span id="date"></span>
             </h3>
             <p id="input">
                 What is your name? <input type="text" id="name" name="name" class="textbox" placeholder="First and Last name" autocomplete="on" required>
@@ -45,7 +45,9 @@
                 How are you feeling? <input type="text" id="feeling" name="feeling" class="textbox" placeholder="How are you?" autocomplete="on" required>
                 <br>
                 <br>
-                    <input onclick="userSubmission()" type="button" class="submit_button" name="submit" value="Submit">
+                
+                <button type="button" onclick="userSubmission()">submit</button>
+                   
             </p>
             <p id="userOutput"></p>
             <button onclick="scriptTest()">Tester</button>

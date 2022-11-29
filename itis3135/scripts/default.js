@@ -5,17 +5,18 @@ function scriptTest()
 
 
 window.onload = function () {
-    var userDate = new Date();
-    var day = userDate.toString();
-    var time = userDate.toLocalsTimeString();
-    document.getElementById("userDate").innerHTML = time + " , " + day;
+    var date = new Date();
+    var day = date.toString();
+    var time = date.toLocalsTimeString();
+    document.getElementById("date").innerHTML = time + " , " + day;
 }
 
 function userSubmission(){
-    let userName = document.getElementById("userName").value;
-    let userFeeling = document.getElementById("userFeeling").value;
-    let userGetWelcome = "The Collins Design LLC welcomes you, " + userName + "! were glad you are doing  " + userFeeling + "!";
-    document.getElementById("welcomeoutput").innerHTML = userGetWelcome;
+    const userName = document.getElementById("userName").value;
+    const userFeeling = document.getElementById("userFeeling").value;
+    console.log(userName);
+    console.log(userFeeling);
+    document.getElementById("userSubmission").innerHTML = "The Collins Design LLC welcomes you, " + userName + "! were glad you are doing  " + userFeeling + "!";
 }
 
 function customerWebsites() {
