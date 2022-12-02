@@ -6,7 +6,7 @@
          Introduction | Xavier Collins | Xenoistic Cat| ITIS 3135 
     </title>    
     <link href="styles/default.css" rel="stylesheet" type="text/css" >
-    <script src="scripts/default.js"></script>
+    <script src="scripts/polygons.js"></script>
     </head>
         <body>
         <header>
@@ -34,38 +34,14 @@
             <br>
             <br>
 
-            <h2>First Scripts Page</h2>
-
-            <h3>
-                 Today's Date: <span id="date"></span>
-            </h3>
-            
-            <p id="input">
-                What is your name: <input type="text" id="userName" name="userName" class="textbox" placeholder="Xavier">
-                <br>
-                <br>
-                How are you feeling: <input type="text" id="userFeeling" name="userFeeling" class="textbox" placeholder="How are you?">
-                <br>
-                <br>
-                <button type="button" onclick="userSubmission()">submit</button>
-                
-            </p>
-            <h3> 
-                <span id ="user">
-
-                </span>
-            </h3>
-            
-            
-            
-            <button onclick="scriptTest()">Tester</button>
-            <button onclick="customerWebsites()">Customer Websites</button>
-            <button onclick="totalCostWebsite()">Total Website Cost</button>
-            <button onclick="websiteTheme()">Theme of Site</button>
-            <button onclick="completionDate()">Date of Completion</button>
-            <button onclick="userFeedback()">Feedback</button>
-
-          
+            <h2><strong>Polygon</strong></h2>
+            <br>
+            <h3> Click the button below to generate a polygon</h3>
+            <div class="text-center">
+            <button onclick="generatePolygon()">Get a Polygon</button>
+            </div>
+            <p id="typeOfPolygon"></p>
+           
             
         </main>
 
