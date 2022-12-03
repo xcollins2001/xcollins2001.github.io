@@ -3,16 +3,16 @@ function generatePolygon(){
     validateEntry(polygonNumber);
 }
 
-function validateEntry(number)
+function validateEntry(angles)
 {
-    if(isNaN(number))
+    if(isNaN(angles))
     {
         alert("Invalid selection!! Again, please choose a number between 1 and 10 match the polygon.");
         generatePolygon();
     }
      else
      {
-        polygonSides = Math.trunc(number);
+        polygonSides = Math.trunc(angles);
         if(polygonSides < 1 || polygonSides > 10)
         {
             alert("Invalid selection!! Again, please choose a number between 1 and 10 match the polygon.");
