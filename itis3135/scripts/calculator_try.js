@@ -5,7 +5,7 @@ function getValue(){
 }
 
 function printValue(val){
-    let out = document.querySelector('#result');
+    let out = document.querySelector('#output');
     let current = out.innerHTML;
 
     if(out.innerHTML == "0")
