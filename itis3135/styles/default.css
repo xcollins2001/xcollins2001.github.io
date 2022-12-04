@@ -1,6 +1,6 @@
 body{
     font-family: Optima;
-    background-color: dodgerblue;
+    background-color: dodgerblue
 }
 
 header,h1, h2,h3, h4, h5
@@ -43,13 +43,8 @@ nav{
       font-size: 13px;
       text-transform: uppercase;
       padding: 0px 32px;
-      
-      
   }
     
-  
-
-
 .photo{
     text-align: center;
 }
@@ -103,8 +98,8 @@ form
 
 button
 {
-    background-color: greenyellow;
-    border-radius: 5px;
+    background-color: lightcoral;
+    border-radius: 1px;
    
 }
 
@@ -117,3 +112,52 @@ button:hover
     background-color: #ffffff;
 }
 
+* div {
+
+    margin: 0px;
+    padding: 0px;
+    outline: 6px;
+}
+
+div .calc-body{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-60%, -60%);
+    background-color:white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+div .result{
+    background-color:#212121;
+    color: white;
+    border-radius: 8px 8px 0 1;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+ .buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.buttons button{
+    padding: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    border:none;
+    transition: .4s all linear;
+}
+
+.buttons button:hover{
+    background-color:beige;
+}
+
+.buttons button:active{
+    background-color: white;
+}
+
+.equal{
+    background-color: red;
+}
