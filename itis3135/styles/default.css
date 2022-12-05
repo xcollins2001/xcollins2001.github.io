@@ -132,7 +132,7 @@ div .calculatorBody{
 div .output{
     background-color:#212121;
     color: white;
-    border-radius: 8px 8px 0px 1;
+    border-radius: 8px 8px 1px 1px;
     padding: 20px;
     font-size: 2.5rem;
 }
