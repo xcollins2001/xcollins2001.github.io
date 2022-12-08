@@ -38,12 +38,12 @@ nav{
   }
   
   nav ul li a{
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      text-transform: uppercase;
-      padding: 0px 32px;
-  }
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0px 4px;
+}
     
 .photo{
     text-align: center;
