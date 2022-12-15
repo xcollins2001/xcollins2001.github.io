@@ -1,7 +1,7 @@
 window.onload = function(){
-    document.getElementById("inputSalary").onclick = addSalary;
-    document.getElementById("showResults").onclick = displayResults;
-    document.getElementById("showSalary").onclick = displaySalary;
+    document.getElementById("input_salary").onclick = addSalary;
+    document.getElementById("show_results").onclick = displayResults;
+    document.getElementById("show_salary").onclick = displaySalary;
     document.getElementById("individual").focus
 
 }
@@ -14,7 +14,7 @@ function addSalary(){
     var nameInput = parseFloat(document.getElementById("individual").value);
 
     salaryInput = parseFloat(salaryInput);
-    person.push(nameInput);
+    individual.push(nameInput);
     salaryCount.push(salaryInput);
 
     document.getElementById("salaryCount").value = "";
@@ -26,7 +26,7 @@ function displayResults(){
 
     var totalSum = 0;
 
-   var salary = 0;
+   var salary = " ";
 
    var individualSalary = 0;
 
@@ -57,8 +57,8 @@ function displaySalary(){
         tableDisplay += "<tr><td>" + individual[i] + "</td><td>" + salaryCount[i] + "</td></tr>";
     }
 
-    tableDisplay +=  "</table>";
+    tableDisplay += "</table>";
 
-    document.getElementById("tableResults").innerHTML = tableDisplay;
+    document.getElementById("table-results").innerHTML = tableDisplay;
 
 }
