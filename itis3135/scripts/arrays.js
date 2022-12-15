@@ -2,16 +2,17 @@ window.onload = function(){
     document.getElementById("input_salary").onclick = addSalary;
     document.getElementById("show_results").onclick = displayResults;
     document.getElementById("show_salary").onclick = displaySalary;
-    document.getElementById("individual").focus
+    document.getElementById("individual").focus;
 
-}
+};
 
 var individual = [];
 var salaryCount = [];
 
-function addSalary(){
+function addSalary()
+{
     var salaryInput = parseFloat(document.getElementById("salaryCount").value);
-    var nameInput = parseFloat(document.getElementById("individual").value);
+    var nameInput = document.getElementById("individual").value
 
     salaryInput = parseFloat(salaryInput);
     individual.push(nameInput);
@@ -45,7 +46,7 @@ function displayResults(){
     }
    }
 
-    document.getElementById("results").innerHTML = "The average salary is $ " + average.toFixed(2) + ". " + " Max salary at $" + individualSalary.toFixed(2);
+    document.getElementById("results").innerHTML = "The average salary is $ " + average.toFixed(2) + ". " + salary + " max salary at $" + individualSalary.toFixed(2);
 }
 
 function displaySalary(){
