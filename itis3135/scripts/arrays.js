@@ -59,6 +59,6 @@ function displaySalary(){
 
     tableDisplay += "</table>";
 
-    document.getElementById("table-results").innerHTML = tableDisplay;
+    document.getElementById("result_table").innerHTML = tableDisplay;
 
 }
