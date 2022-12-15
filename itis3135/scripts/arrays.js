@@ -45,7 +45,7 @@ function displayResults(){
     }
    }
 
-    document.getElementById("results").innerHTML = "The average salary is $ " + average.toFixed(2) + ". " + salary + " had a max salary at $" + individualSalary.toFixed(2);
+    document.getElementById("results").innerHTML = "The average salary is $ " + average.toFixed(2) + ". " + individual + " had a max salary at $" + individualSalary.toFixed(2);
 }
 
 function displaySalary(){
