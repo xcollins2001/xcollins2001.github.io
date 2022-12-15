@@ -38,14 +38,14 @@ function displayResults(){
 
    for(i = 0; i < salaryCount.length; i++)
    {
-    if(salaryCount[i]> individualSalary)
+    if(salaryCount[i] > individualSalary)
     {
         individualSalary = salaryCount[i];
         salary = individual[i];
     }
    }
 
-    document.getElementById("results").innerHTML = "The average salary is $ " + average.toFixed(2) + ". " + salary + " had a max salary at $" + individualSalary.toFixed(2);
+    document.getElementById("results").innerHTML = "The average salary is $ " + average.toFixed(2) + ". " + " Max salary at $" + individualSalary.toFixed(2);
 }
 
 function displaySalary(){
