@@ -108,36 +108,33 @@
 
     </style>
     <script>
-        let whichPage = "";
-        function appearPage(display){
-            getNamePage = document.getElementsByClassName("pages");
-            for(let i = 0; i < getNamePage.length; i++){
-                if(getNamePage[i].id == display)
-                {
-                    getNamePage[i].style.display = "get";
-                }
-                else
-                {
-                    getNamePage[i].style.display = "none";
-                }
+        function appearPage(target){
+            const data = document.getElementsByClassName('pages');
+
+            for (let i = 0; i < data.length; i++){
+                data[i].style.display = "none";
             }
+
+            document.getElementById(target).style.display = "block";
+            return false;
         }
+        
     </script>
     
 </head>
-<body onload="appearPage('home');">
+<body onload="appearPage('home')">
     <header>
         <h1>Can You Hoop?</h1>
         <nav>
-            <a href="#" onclick = "getPage('home')">Home Page</a>
-            <a href="#" onclick="getPage('shoot')">How to Shoot</a>
-            <a href="#" onclick = "getPage('defense')">Defense</a>
-            <a href="#" onclick = "getPage('dribble')">Dribble</a>
-            <a href="#" onclick = "getPage('shape')">Stay in Shape</a>
+            <a href="#" onclick = "appearPage('home')">Home Page</a>
+            <a href="#" onclick="appearPage('shoot')">How to Shoot</a>
+            <a href="#" onclick = "appearPage('defense')">Defense</a>
+            <a href="#" onclick = "appearPage('dribble')">Dribble</a>
+            <a href="#" onclick = "appearPage('shape')">Stay in Shape</a>
         </nav>
     </header>
     <main>
-        <section class="pages" id="home">
+        <section class="pages" id="home" style="display: block;">
         <h2>Home Page</h2>
         <div id="youtube_video1">
         <figure>
@@ -162,7 +159,7 @@
 
 
 
-        <section class="pages" id="shoot">
+        <section class="pages" id="shoot" style="display: none;">
             <h2>How to Shoot</h2>
             <div id="youtube_video2">
                 <figure>
@@ -180,7 +177,7 @@
         </section>
 
 
-        <section class="pages" id="defense">
+        <section class="pages" id="defense" style="display: none;">
             <h2>Defense</h2>
             <div id="youtube_video3">
             <figure>
@@ -199,7 +196,7 @@
         </section>
 
 
-        <section class="pages" id="dribble">
+        <section class="pages" id="dribble" style="display: none;">
             <h2>Dribble</h2>
             <figure id="youtube_video4">
                 <iframe width="540" height="552" src="https://www.youtube.com/embed/WokdWEYZ7GU"></iframe>
@@ -212,7 +209,7 @@
             </div>
         </section>
 
-        <section class="pages" id="shape">
+        <section class="pages" id="shape" style="display: none;">
             <h2>Being in Shape is Very Important</h2>
             <div id="youtube_video5">
             <figure>
