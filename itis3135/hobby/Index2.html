@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home | Xavier Collins | Xenoistic Cat| ITIS 3135</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
@@ -25,6 +27,11 @@
                 color: black;
             }
 
+            #image{
+                display:block;
+                margin: 0 auto;
+                text-align: center;
+            }
             #youtube_video1{
                 display: block; 
                 margin: 0 auto;
@@ -101,20 +108,24 @@
 
     </style>
     <script>
-        function appearPage(target){
-            const allPages = document.getElementsByClassName('pages');
-
-            for( let i = 0; i < allPages.length; i++){
-                allPages[i].style.display = "none";
+        let whichPage = "";
+        function appearPage(display){
+            getNamePage = document.getElementsByClassName("pages");
+            for(let i = 0; i < getNamePage.length; i++){
+                if(getNamePage[i].id == display)
+                {
+                    getNamePage[i].style.display = "get";
+                }
+                else
+                {
+                    getNamePage[i].style.display = "none";
+                }
             }
-
-            document.getElementById(target).style.display = "block";
-            return false;
         }
     </script>
     
 </head>
-<body onload = "appearPage('home')">
+<body onload="appearPage('home');">
     <header>
         <h1>Can You Hoop?</h1>
         <nav>
@@ -123,7 +134,6 @@
             <a href="#" onclick = "getPage('defense')">Defense</a>
             <a href="#" onclick = "getPage('dribble')">Dribble</a>
             <a href="#" onclick = "getPage('shape')">Stay in Shape</a>
-            
         </nav>
     </header>
     <main>
@@ -141,6 +151,12 @@
             <p>Basketball is a physical sport where two teams of athletes play against each other. When playing this sport, a player must shoot or put the basketball in the hoop and there will be a defender that stops that person from putting the ball in the hoop. This is vice versa after a person scores. There is an offense and defense. The person who tries to put the ball in the hoop is on offense and the person who's gaurding the person on offense is defense. Furthermore, this sport of course have specific rules so its fair on both sides. Basketball can be a real competitive sport that can be very entertaining to watch.</p>
             <h2>Is This a Professional Sport?</h2>
             <p>Basketball does have a professional sport. Its called the National Basketball Association or NBA. The National Basketball Association, or NBA, is a professional basketball league comprised of 30 teams across North America featuring the best basketball players in the world. It was founded June 6, 1946. Furthermore, "The NBA is a collection of 30 teams, broken down by two conferences with three divisions apiece. The Western Conference plays host to the Northwest, Pacific and Southwest Divisions, featuring the following 15." The NBA have different types of programs. One program they have is called NBA Cares. This program is "the league’s global social responsibility program that builds on the NBA’s mission of addressing important social issues in the United States and around the world." The NBA consists of the worlds best basketball players that consist of great athletic skills and train everyday to get paid, compete, and win a NBA.</p>
+            </div>
+            <div id="picture1">
+                <figure>
+                    <img src="images4/xavierKlub copy.jpeg" alt="image" width="230">
+                <figcaption>The Real Hooper!</figcaption>
+                </figure>
             </div>
         </section>
 
